@@ -6,7 +6,7 @@
 - [ ] Exemplo de tarefa
 
 ## Arquivos de apoio
-<!-- (Opcional) ço destinado a vídeos, imagens, prints que auxiliem na explicação da issue -->
+<!-- (Opcional) Espaço destinado a vídeos, imagens, prints que auxiliem na explicação da issue -->
 <!-- ![Nome do arquivo](https://nome_do_arquivo.svg) -->
 
 ## Critérios de aceitação
