@@ -1,7 +1,7 @@
 ## Descrição
 <!-- Espaço destinado a adicionar a descrição do bug -->
 
-## Passos para reprodução do bug
+## Passos para replicar falha
 <!-- Espaço destinado a adicionar os passos para se reproduzir o bug -->
 1) Exemplo passo 1
 2) Exemplo passo 2
