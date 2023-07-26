@@ -1,0 +1,22 @@
+# Ignore data files
+data/
+
+# Ignore compiled Python files
+*.pyc
+__pycache__/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore environment-specific files
+.env
+/env
+
+# Ignore log files
+*.log
+
+# Ignore any other generated or sensitive files
+*.csv
+*.xlsx
+*.sqlite
+secrets.json
