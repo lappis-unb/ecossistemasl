@@ -61,7 +61,7 @@ A visão estratégica visa a consolidação de Laboratório de Inovação para P
 
 ## Método de Atividades Integradas
 
-Para atender a complexidade de nossas atividades, buscamos a implementação e melhoria constante de um método que apoie o relacionamento entre [os Times](https://encurtador.com.br/avKUV).
+Para contribuir no desenvolvimento das demandas, buscamos a implementação e melhoria contínua de um [método que apoie o as atividades dos Times](https://encurtador.com.br/avKUV).
 
 ## Rituais
 
