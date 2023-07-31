@@ -59,6 +59,9 @@ A visão estratégica visa a consolidação de Laboratório de Inovação para P
 
 - [ ] Ecossistemas SL - Repositório do projeto. Lugar de disponibilizar os estudos técnicos, relatórios etc.
 
+##Método de Atividades Integradas
+
+Para atender a complexidade de nossas atividades, buscamos a implementação e melhoria constante de um método que apoie o relacionamento entre [os Times](https://encurtador.com.br/avKUV).
 
 ## Rituais
 
