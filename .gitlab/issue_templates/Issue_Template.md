@@ -13,7 +13,7 @@
 - [ ] Critério 1 <br />
 **Dado que** algo <br />
 **Quando** faço <br /> 
-**então** resulta <br />
+**Então** resulta <br />
 
 ## Observações
 Links de apoio e informações adicionais
