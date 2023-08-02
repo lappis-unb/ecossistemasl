@@ -5,20 +5,20 @@
 
 ## Contexto
 - 
-### Escopo
-## Time de Produto
+## Escopo
+### Time de Produto
 - Tópico 1
 
-## Escopo do Time de Comunicação
+### Time de Comunicação
 - Tópico 1
 
-## Escopo do Time de Design
+### Time de Design
 - Tópico 1
 
-## Escopo do Time de Desenvolvimento
+### Time de Desenvolvimento
 - Tópico 1
 
-## Escopo do Time de Análises
+### Time de Análises
 - Tópico 1
 
 ## Observações
