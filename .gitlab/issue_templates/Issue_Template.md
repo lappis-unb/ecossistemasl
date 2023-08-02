@@ -10,7 +10,7 @@
 - [ ] Exemplo de tarefa
 
 ## Critérios de aceitação
-- [ ] Critério 1
+- [ ] Critério 1 <br />
 **Dado que** algo <br />
 **Quando** faço <br /> 
 **então** resulta <br />
