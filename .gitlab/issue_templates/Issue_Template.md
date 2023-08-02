@@ -11,9 +11,9 @@
 
 ## Critérios de aceitação
 - [ ] Critério 1
-**Dado que** algo
-**Quando** faço  
-**então** resulta
+**Dado que** algo <br />
+**Quando** faço <br /> 
+**então** resulta <br />
 
 ## Observações
 Links de apoio e informações adicionais
