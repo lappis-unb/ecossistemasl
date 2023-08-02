@@ -5,8 +5,8 @@
 
 ## Contexto
 - 
-
-## Escopo do Time de Produto
+### Escopo
+## Time de Produto
 - Tópico 1
 
 ## Escopo do Time de Comunicação
