@@ -1,7 +1,7 @@
 ## História da Pessoa Usuária
-**Eu Como** pessoa_usuária / 
-**Quero** fazer_algo  /
-**Para** uma_finalidade /
+**Eu Como** pessoa_usuária \ 
+**Quero** fazer_algo  \
+**Para** uma_finalidade \
 
 ## Contexto
 - 
