@@ -26,7 +26,7 @@
 
 
 <p align="center">
-  <img src="../relatórios/conjuv/data/painel_visitante.png"
+  <img src="../conjuv/data/painel_visitante.png"
  alt=" Exemplo de um Painel de Visitante"/>
 </p>
 
