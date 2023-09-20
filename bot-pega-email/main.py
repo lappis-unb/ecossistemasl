@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 xlsx_file = 'PPA Participativo Tratamento de Demandas.xlsx'
 driver = webdriver.Chrome()
 somar_coluna = False
-time_sleep = 0
+time_sleep = 2
 
 
 def realiza_login():
@@ -27,13 +27,9 @@ def busca_email(proposta, linha, coluna, votos):
         element = driver.find_element(By.XPATH, xpath_busca_prop)
         element.send_keys(proposta)
 
-        time.sleep(time_sleep)
-
         xpath_buscar = '//*[@id="decidim/proposals/proposal_search"]/div/div/button'
         element = driver.find_element(By.XPATH, xpath_buscar)
         element.click()
-
-        time.sleep(time_sleep)
 
         selector_lista_prop = '[data-id]'
         response_id = verificar_tabela(driver, selector_lista_prop, votos)
@@ -47,25 +43,23 @@ def busca_email(proposta, linha, coluna, votos):
             f'https://brasilparticipativo.presidencia.gov.br/admin/participatory_processes/programas/components/2'
             f'/manage/proposals/{response_id[1]}')
 
-        time.sleep(time_sleep)
-
         driver.get(url_prop)
 
         driver.get(verifica_autor(driver))
 
-        time.sleep(2)
+        time.sleep(time_sleep)
 
         xpath_abre_email = '//*[@id="user-groups"]/div[4]/div/table/tbody/tr/td[7]/a[2]/span'
         element = driver.find_element(By.XPATH, xpath_abre_email)
         element.click()
 
-        time.sleep(2)
+        time.sleep(time_sleep)
 
         xpath_mostra_email = '//*[@id="show-email-modal"]/div[2]/div/div[2]/button'
         element = driver.find_element(By.XPATH, xpath_mostra_email)
         element.click()
 
-        time.sleep(2)
+        time.sleep(time_sleep)
 
         xpath_email = '//*[@id="user_email"]/a'
         element = driver.find_element(By.XPATH, xpath_email)
@@ -142,7 +136,6 @@ sheet_names = workbook.sheetnames
 
 limpar_terminal()
 print("Planilhas disponíveis:")
-print("")
 for i, sheet_name in enumerate(sheet_names):
     print(f"{i + 1}: {sheet_name}")
 
@@ -155,11 +148,9 @@ header_row = list(sheet.iter_rows(min_row=1, max_row=1, values_only=True))[0]
 
 limpar_terminal()
 print("Colunas disponíveis:")
-print("")
 for i, column_name in enumerate(header_row):
     print(f"{i + 1}: {column_name}")
 
-print("")
 selected_data_column_index = int(input("Digite o número da coluna da qual deseja retirar os dados: ")) - 1
 selected_print_column_index = int(input("Digite o número da coluna que deseja imprimir: ")) - 1
 selected_votos_column_index = int(input("Digite o numero da coluna que possui os votos: ")) - 1
