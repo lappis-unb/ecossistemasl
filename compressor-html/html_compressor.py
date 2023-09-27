@@ -6,7 +6,7 @@ arquivo_saida = 'newindex.html'
 with open(arquivo_entrada, 'r') as arquivo:
     conteudo = arquivo.read()
 
-novo_conteudo = re.sub(r'\/\/.*\n', '', conteudo)
+novo_conteudo = re.sub(r'(?<!https:)\/\/.*\n', '', conteudo)
 
 novo_conteudo = novo_conteudo.replace('\n', '')
 
