@@ -1,5 +1,5 @@
 # Ignore data files
-data/
+data/private/
 
 # Ignore compiled Python files
 *.pyc
