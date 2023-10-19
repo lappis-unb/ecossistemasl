@@ -1,5 +1,5 @@
 ## Descrição
-Uma breve descrição do problema ou tarefa.
+<!-- Uma breve descrição do problema ou tarefa. -->
 
 ## Tarefas
 - [ ] Tarefa 1
@@ -12,6 +12,5 @@ Uma breve descrição do problema ou tarefa.
 - [ ] Critério 3
 
 ## Anexos
-
-[Inserir capturas de tela, se aplicável]
+<!-- Inserir capturas de tela, se aplicável] -->
 
