@@ -1,5 +1,8 @@
-## Descrição
+## Problema
 <!-- Uma breve descrição do problema ou tarefa. -->
+
+## Solução
+<!-- Uma possivel solução do problema -->
 
 ## Tarefas
 - [ ] Tarefa 1
