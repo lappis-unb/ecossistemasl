@@ -168,6 +168,35 @@ def decimal_to_alphabet(decimal):
     return alphabet
 
 
+def complete_links():
+    file = file_entry.get()
+    if file:
+        try:
+            workbook = openpyxl.load_workbook(file)
+
+            for sheet_name in workbook.sheetnames:
+                worksheet = workbook[sheet_name]
+                update_cells_with_text(worksheet,
+                                       '/rails/active_storage/blobs',
+                                       'https://brasilparticipativo.presidencia.gov.br')
+
+            workbook.save(file)
+            response_label.config(text=f"Links atualizados com sucesso.")
+        except Exception as e:
+            error_line = traceback.extract_tb(e.__traceback__)[-1].lineno
+            response_label.config(text=f"Erro na linha {error_line}: {str(e)}")
+    else:
+        response_label.config(text="Por favor, escolha um arquivo 'XLSX' primeiro.")
+
+
+def update_cells_with_text(sheet, search_text, prefix):
+    for row in sheet.iter_rows():
+        for cell in row:
+            if cell.value and search_text in str(cell.value) and prefix not in str(cell.value):
+                cell.style = 'Hyperlink'
+                cell.hyperlink = prefix + cell.value
+
+
 def copy_output():
     output = response_label.cget("text")
     if output:
@@ -192,6 +221,10 @@ file_entry.pack(pady=10)
 
 # Button to organize the XLSX file
 organize_button = tk.Button(window, text="Organizar planilha", command=organize_xlsx)
+organize_button.pack()
+
+# Button to complete links the XLSX file
+organize_button = tk.Button(window, text="Completar links", command=complete_links)
 organize_button.pack()
 
 # Label to display system response
