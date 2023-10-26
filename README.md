@@ -1,6 +1,5 @@
 # EcossistemaSL
 
-
 O presente Projeto envolve pesquisa e aplicação de técnicas e metodologias de desenvolvimento de software livre, e gestão de conteúdo e métricas de engajamento em plataformas digitais com intuito de subsidiar a Secretaria Nacional de Participação Social na formulação e implementação de soluções tecnológicas de participação digital. Trata-se de um arranjo interdisciplinar que envolve pesquisa e inovação em processos de desenvolvimento de soluções que serão incorporadas à esfera pública na forma de Softwares Livres e de modo mais concreto nos mecanismos de governança digital da própria Secretaria Nacional de Participação Social.
 
 A plataforma faz parte de uma estratégia de participação digital que requer uma equipe multidisciplinar (tecnologia, gestão e comunicação).
