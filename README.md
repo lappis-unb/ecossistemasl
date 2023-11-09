@@ -70,7 +70,7 @@ Os rituais do projeto ainda estão sendo amadurecidos, mas hoje temos:
 
 - Reunião semanal de onboarding técnico (Rails) - Segunda feira, as 17 no canal Jitsi (Canal Decidimunb)
 
-- Planning dos Dev
+- Planning Dev
 
 - Planning moderadores - Segunda feiras, as 9h30, presencial na finatec ou remoto
 
