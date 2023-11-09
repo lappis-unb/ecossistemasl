@@ -52,7 +52,7 @@ A visão estratégica visa a consolidação de Laboratório de Inovação para P
 
 ### Repositório Gitlab
 
-- [ ] Decidim - repositório mirror do decidim global com as funcionalidades core da Comunidade Decidim
+- [x] Decidim - repositório mirror do decidim global com as funcionalidades core da Comunidade Decidim
 
 - [ ] Metadecidim - Repositorio mirror do Metadecidim global. Possui plugings e funcionalidades adicionais propostas pela comunidade e não presentes no core. Vale lembrar que existem outros plugins disponíveis e mantidos por outras organizações
 
