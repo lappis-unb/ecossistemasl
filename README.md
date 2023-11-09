@@ -18,6 +18,7 @@ A visão estratégica visa a consolidação de Laboratório de Inovação para P
 - [ ] [Visão Geral dos espaços/módulos do decidim - 2](https://docs.decidim.org/en/v0.27/features/general-description)
 
 
+
 ### Visão Geral do projeto Ecossistema de Software Livre
 
 - [ ] [Slide com a apresentação da presidência](https://docs.google.com/presentation/d/1dALtIzLVS9e-rTt_C0F3VmlOvtyy0pPe/edit?usp=sharing&ouid=108239589330623281695&rtpof=true&sd=true)
