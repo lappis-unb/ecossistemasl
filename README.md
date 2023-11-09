@@ -26,9 +26,9 @@ A visão estratégica visa a consolidação de Laboratório de Inovação para P
 
 ## Canais de Comunicação do projeto
 
-- [ ] [Grupo Telegram Geral DecidimBR](https://t.me/DecidimBR)
-- [ ] [Grupo Telegram Lappis Dev](https://t.me/+3ft5LFW6D_hkN2Mx)
-- [ ] [Organização Gitlab](https://gitlab.com/lappis-unb/decidimbr)
+- [x] [Grupo Telegram Geral DecidimBR](https://t.me/DecidimBR)
+- [x] [Grupo Telegram Lappis Dev](https://t.me/+3ft5LFW6D_hkN2Mx)
+- [x] [Organização Gitlab](https://gitlab.com/lappis-unb/decidimbr)
 
 ## Canais de Comunicação Decidim Global
 
