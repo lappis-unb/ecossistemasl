@@ -7,7 +7,6 @@ Essa equipe visa garantir o desenvolvimento e adequação das funcionalidades da
 
 A visão estratégica visa a consolidação de Laboratório de Inovação para Participação com capacidade de desenvolver e implementar estratégias e ferramentas de participação digital que possam ser (re)utilizadas pelos demais órgãos do governo.
 
-
 ## Entenda o Projeto
 
 ### Visão Geral Decidim
