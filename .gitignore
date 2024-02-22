@@ -1,5 +1,5 @@
 # Ignore data files
-data/
+data/private/
 
 # Ignore compiled Python files
 *.pyc
@@ -16,7 +16,10 @@ __pycache__/
 *.log
 
 # Ignore any other generated or sensitive files
-*.csv
 *.xlsx
 *.sqlite
 secrets.json
+
+# Ignore CSV files except the ones in data/publics/
+*.csv
+!data/public/*.csv
