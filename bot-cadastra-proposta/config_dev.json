@@ -4,8 +4,9 @@
     "csv_filename": "Controle Iniciativas da Sociedade Civil - Iniciativas da Sociedade Civil.csv",
     "mode_headless": false,
     "login_credentials": {
-        "username": "",
-        "password": ""
+        "username": "giovanni.acg@gmail.com",
+        "password": "QFjgDMKFfWewv7p"
     },
-    "default_city": "Japão"
+    "default_city": "Japão",
+    "initial_page_url": "https://lab-decide.dataprev.gov.br/admin/participatory_processes/testecomponentes/components/971/manage/proposals"
 }

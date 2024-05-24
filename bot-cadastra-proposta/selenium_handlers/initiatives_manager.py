@@ -1,45 +1,5 @@
-from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import Select
-from webdriver_manager.chrome import ChromeDriverManager
-import time
-
-
-def setup_selenium(config):
-    chrome_options = Options()
-
-    if config["mode_headless"]:
-        chrome_options.add_argument("--headless")
-
-    driver = webdriver.Chrome(
-        service=Service(ChromeDriverManager().install()), options=chrome_options
-    )
-    return driver
-
-
-def login(driver, config):
-    driver.get(config["login_url"])
-
-    if (
-        config["login_credentials"]["username"]
-        and config["login_credentials"]["password"]
-    ):
-        driver.find_element(By.ID, "session_user_email").send_keys(
-            config["login_credentials"]["username"]
-        )
-        driver.find_element(By.ID, "session_user_password").send_keys(
-            config["login_credentials"]["password"]
-        )
-        driver.find_element(By.ID, "session_user_password").send_keys(Keys.ENTER)
-        time.sleep(2)
-    else:
-        print("No login credentials provided. Please log in manually.")
-        input("Press Enter after logging in...")
-
-    print("Logged in.")
 
 
 def select_category(driver, category_text):
@@ -76,7 +36,9 @@ def create_initiative(driver, config, initiative):
     driver.get(config["create_initiative_url"])
 
     # Title
-    driver.find_element(By.ID, "proposal_title_pt__BR").send_keys(initiative.name)
+    driver.find_element(By.ID, "proposal_title_pt__BR").send_keys(
+        f"{initiative.name}".title()
+    )
 
     # Description
     full_description = concatenate_description(initiative)
@@ -109,5 +71,20 @@ def create_initiative(driver, config, initiative):
     input("Press Enter after adding the initiative...")
 
 
-def teardown_selenium(driver):
-    driver.quit()
+def format_title(driver, hrefs):
+    for href in hrefs:
+        driver.get(href)
+
+        title_element = driver.find_element(By.ID, "proposal_title_pt__BR")
+        original_title = title_element.get_attribute("value")
+        formatted_title = original_title.title()
+
+        if original_title != formatted_title:
+            title_element.clear()
+            title_element.send_keys(formatted_title)
+
+            save_button = driver.find_element(
+                By.XPATH,
+                "//button[@type='submit' and @name='commit' and contains(@class, 'button')]",
+            )
+            save_button.click()
