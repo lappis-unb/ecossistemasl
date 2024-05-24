@@ -1,0 +1,11 @@
+{
+    "login_url": "https://brasilparticipativo.presidencia.gov.br/users/sign_in",
+    "create_initiative_url": "https://brasilparticipativo.presidencia.gov.br/admin/participatory_processes/unidospelors/components/110/manage/proposals/new",
+    "csv_filename": "Controle Iniciativas da Sociedade Civil - Iniciativas da Sociedade Civil.csv",
+    "mode_headless": false,
+    "login_credentials": {
+        "username": "",
+        "password": ""
+    },
+    "default_city": "Porto Alegre, RS"
+}

@@ -1,0 +1,11 @@
+{
+    "login_url": "https://lab-decide.dataprev.gov.br/users/sign_in",
+    "create_initiative_url": "https://lab-decide.dataprev.gov.br/admin/participatory_processes/testecomponentes/components/971/manage/proposals/new",
+    "csv_filename": "Controle Iniciativas da Sociedade Civil - Iniciativas da Sociedade Civil.csv",
+    "mode_headless": false,
+    "login_credentials": {
+        "username": "",
+        "password": ""
+    },
+    "default_city": "Japão"
+}
