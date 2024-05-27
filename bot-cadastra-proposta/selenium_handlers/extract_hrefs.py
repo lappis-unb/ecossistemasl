@@ -25,6 +25,7 @@ def get_last_page_href(driver):
         last_page_button = None
 
     if last_page_button:
+        last_page_button = last_page_button.find_element(By.TAG_NAME, "a")
         last_page_href = last_page_button.get_attribute("href")
         return last_page_href
     return None
@@ -54,6 +55,9 @@ def extract_all_hrefs(driver, initial_url):
             all_page_hrefs.append(initial_url)
         else:
             all_page_hrefs = generate_all_page_hrefs(last_page_href)
+
+        print(all_page_hrefs)
+        input("Press Enter to continue...")
 
         for page_href in all_page_hrefs:
             driver.get(page_href)

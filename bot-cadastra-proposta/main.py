@@ -84,7 +84,7 @@ def main():
             for initiative in initiatives[start_row - 1 :]:
                 create_initiative(driver, config, initiative)
 
-        elif action_choice == Action.EXTRACT_HREFS:
+        elif action_choice == Action.FORMAT_TITLE:
             initial_url = config["initial_page_url"]
             all_hrefs = extract_all_hrefs(driver, initial_url)
             format_title(driver, all_hrefs)

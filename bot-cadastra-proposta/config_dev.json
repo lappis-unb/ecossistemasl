@@ -8,5 +8,6 @@
         "password": "QFjgDMKFfWewv7p"
     },
     "default_city": "Japão",
-    "initial_page_url": "https://lab-decide.dataprev.gov.br/admin/participatory_processes/testecomponentes/components/971/manage/proposals"
+    "initial_page_url": "https://lab-decide.dataprev.gov.br/admin/participatory_processes/testecomponentes/components/971/manage/proposals",
+    "chrome_user_data_dir": "/home/gio/.config/google-chrome/Default"
 }

@@ -10,6 +10,9 @@ def setup_selenium(config):
     if config["mode_headless"]:
         chrome_options.add_argument("--headless")
 
+    chrome_options.add_argument("--remote-debugging-port=9222")
+    chrome_options.add_argument(f"--user-data-dir={config['chrome_user_data_dir']}")
+
     driver = webdriver.Chrome(
         service=Service(ChromeDriverManager().install()), options=chrome_options
     )
