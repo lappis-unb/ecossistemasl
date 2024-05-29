@@ -9,5 +9,6 @@
     },
     "default_city": "Porto Alegre, RS",
     "initial_page_url": "https://brasilparticipativo.presidencia.gov.br/admin/participatory_processes/unidospelors/components/110/manage/proposals",
-    "chrome_user_data_dir": "/home/gio/.config/google-chrome/Default"
+    "chrome_user_data_dir": "/home/gio/.config/google-chrome/Default",
+    "force_category_id": "109"
 }

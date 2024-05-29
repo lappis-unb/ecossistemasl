@@ -9,5 +9,6 @@
     },
     "default_city": "Japão",
     "initial_page_url": "https://lab-decide.dataprev.gov.br/admin/participatory_processes/testecomponentes/components/971/manage/proposals",
-    "chrome_user_data_dir": "/home/gio/.config/google-chrome/Default"
+    "chrome_user_data_dir": "/home/gio/.config/google-chrome/Default",
+    "force_category_id": "109"
 }

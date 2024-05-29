@@ -1,4 +1,7 @@
-from spreadsheet_reader import read_csv_to_initiative_list
+from spreadsheet_reader import (
+    read_csv_to_initiative_list,
+    add_text_to_initiative_attribute,
+)
 from selenium_handlers.setup import setup_selenium, teardown_selenium
 from selenium_handlers.login import login
 from selenium_handlers.initiatives_manager import create_initiative, format_title
@@ -81,8 +84,32 @@ def main():
             filename = config["csv_filename"]
             initiatives = read_csv_to_initiative_list(filename)
             start_row = get_start_row()
-            for initiative in initiatives[start_row - 1 :]:
-                create_initiative(driver, config, initiative)
+
+            for initiative in initiatives[start_row - 2 :]:
+                try:
+                    if "não" not in initiative.status:
+                        continue
+
+                    input(f"Press Enter to create initiative: {initiative.name}")
+
+                    for i in range(0, 4):
+                        wait_to_submit = False
+                        if i == 3:
+                            print(f"Failed to create initiative: {initiative.name}")
+                            wait_to_submit = True
+
+                        response = create_initiative(
+                            driver, config, initiative, wait_to_submit=wait_to_submit
+                        )
+                        if response:
+                            add_text_to_initiative_attribute(
+                                filename, initiative.name, "Status", "feito"
+                            )
+                            break
+                except Exception as e:
+                    print(f"Failed to create initiative: {initiative.name}")
+                    print(e)
+                    input("Press Enter to continue...")
 
         elif action_choice == Action.FORMAT_TITLE:
             initial_url = config["initial_page_url"]
